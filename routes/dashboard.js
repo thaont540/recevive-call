@@ -5,10 +5,10 @@ const Ticket = require('../models/ticket');
 
 // GET /dahsboard
 router.get('/', function (req, res) {
-  Ticket.find()
-    .then(function (tickets) {
-      res.render('dashboard/index', { tickets: tickets });
-    });
+//  Ticket.find()
+//    .then(function (tickets) {
+      res.render('dashboard/index', { tickets: null });
+    // });
 });
 
 module.exports = router;
